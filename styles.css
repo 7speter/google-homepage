@@ -1,3 +1,11 @@
+*{
+	margin:0;
+}
+
+html, body {
+	height: 100%;
+}
+
 body {
 	font-family:Arial;
 	font-size:12px;
@@ -15,15 +23,15 @@ li{
 	display: inline;
 }
 
-#navbar li a {
+ #navbar li a {
 	color:#272727;
 }
 
-#navbar li{
+ #navbar li{
 	color:#77736A;
 }
 
-#navbar li div{
+ #navbar li div{
 	display:inline;
 }
 
@@ -44,6 +52,11 @@ a.hover{
 }
 
 .inputs {
+	/*Otherwise known as wrapper on http://ryanfait.com/resources/footer-stick-to-bottom-of-page/*/
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
 	clear:right;
 	margin:0 auto;
 	text-align:center;
@@ -66,9 +79,10 @@ a.hover{
 	position:centered;
 }
 
-#navbar li{
+ #navbar li{
 	padding-right:15px;
 }
+ 
 
 input[type="text"] {
 	width:590px;
@@ -131,9 +145,12 @@ div img {
 	padding-top:12px;
 }
 
+.footer, .push {
+	clear: both;
+}
+
 .footer {
 	background-color: #F2F2F2;
 	border-top:1px solid #E4E4E4;
-	color:#6f6f6f;
-	min-height: 17px;
+	color:#6f6f6f;	
 }
